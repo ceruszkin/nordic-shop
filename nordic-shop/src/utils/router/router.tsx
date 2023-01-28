@@ -4,8 +4,11 @@ import {
 
 import {MainLayout} from '../../components/main-layout'
 import {GoodList} from '../../components/good-list'
+import { GoodItem } from '../../components/good-item'
+
 import {Main} from '../../pages/main'
 import {Basket} from '../../pages/basket'
+import { Detail } from '../../pages/detail/detail'
 
 /**
  * Router - утилс который опредяет маршруты приложения
@@ -24,10 +27,10 @@ import {Basket} from '../../pages/basket'
                             index: true,
                             element: <GoodList />
                         },
-                        /*{
+                        {
                             path: "/goods/:id",
-                            element: <GoodItem />
-                        }*/
+                            element: <Detail />
+                        }
                     ]
                 },
                 {

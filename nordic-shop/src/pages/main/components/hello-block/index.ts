@@ -1,1 +1,1 @@
-export {} from "./hello-block"
+export { HelloBlock } from './hello-block'

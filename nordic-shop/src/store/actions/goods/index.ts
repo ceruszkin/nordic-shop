@@ -1,1 +1,1 @@
-import { createExtraActions } from "./goods";
+export { createExtraActions } from "./goods";

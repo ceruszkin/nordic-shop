@@ -1,12 +1,14 @@
-export function HelloBlock(){
-    return(
-    <>
-        <h1>
-                   Welcome to the Nordic Shop!
-        </h1>
-        <h2>
-                    Clothes and souvenirs from Norway, Sweden and Estonia.
-        </h2>
-    </>
+import { StyledHelloBlock } from './style'
+
+export function HelloBlock() : JSX.Element {
+    return (
+        <StyledHelloBlock>
+            <h1>
+                Добро пожаловать в iNordicShop
+            </h1>
+            <h2>
+                Магазин одежды и сувениров из Норвегии, Эстонии и Швеции
+            </h2>
+        </StyledHelloBlock>
     )
 }

@@ -1,1 +1,1 @@
-import { slice } from "./goods";
+export { slice } from "./goods";

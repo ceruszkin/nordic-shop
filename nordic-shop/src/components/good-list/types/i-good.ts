@@ -4,5 +4,6 @@ export type iGood = {
     DISCR: string,
     PRICE: string,
     IMG: string,
-    COUNT: string
+    COUNT: string,
+    COUNT_IN_BASKET?: any, 
 }

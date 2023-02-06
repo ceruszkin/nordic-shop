@@ -1,18 +1,18 @@
-import React from 'react'
-import {Outlet} from 'react-router-dom'
-import { HelloBlock } from './components/hello-block/hello-block'
-import { SearchInput } from "./components/search-input/search-input"
+import { Outlet, useLocation } from 'react-router-dom'
 
+import {HelloBlock, SearchInput} from './components'
 
-/**
- * Goods - компонент статики старицы Ассортимент
- */
-export function Main() : JSX.Element{
+export function Main() : JSX.Element {
+    const { pathname } = useLocation()
     return (
-            <>
-                <HelloBlock />
-                <SearchInput />
-                <Outlet />
-            </>
-        )
+        <>
+            {pathname === '/' && (
+                <>
+                    <HelloBlock />
+                    <SearchInput />
+                </>
+            )}
+            <Outlet />
+        </>
+    )
 }

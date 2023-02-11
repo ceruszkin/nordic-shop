@@ -1,1 +1,1 @@
-export {OrderFormBlock} from "./order-form-block"
+export { OrderFormBlock } from './order-form-block'

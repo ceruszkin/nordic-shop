@@ -1,19 +1,19 @@
 export function telegramBot(text: string){
-    //6179731481:AAEThueFwQK82osC2yieoLGpDj7cjr4H_iM
 
-    const bot_token = '6179731481:AAEThueFwQK82osC2yieoLGpDj7cjr4H_iM'
-    const url_api_telegram = `https://api.telegram.org/bot${bot_token}`
+    const bot_token = '5612987931:AAEPM-thFG95wRraVCg_vtJ-G9R9z84CFzI'
+    const url_api_telegram = `https://api.telegram.org/bot${bot_token}`;
 
     const adminsArray: any = {
-        "Виктория": 485306334
+        'Александр': 524721402
     }
 
-    fetch(`${url_api_telegram}/sendMessage?chat_id=${adminsArray['Виктория']}$text=текст`, {
-        method: "POST",
+    fetch(`${url_api_telegram}/sendMessage?chat_id=${adminsArray['Александр']}&text=${text}`, {
+        method: 'POST', 
         headers: {
-            "Content-Type": "application/json"
+            'Content-Type': 'application/json',
         }
     }).then(() => {
-        alert("Message has been send to the administrator")
+        alert('Сообщение отправлено админинистратору')
     })
+
 }
